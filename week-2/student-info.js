@@ -1,12 +1,16 @@
+import Link from "next/link";
 import React from "react"; 
 
-const StudentInfo = () => {
+const GitHubLink = () => {
   return (
     <div>
-      <h1>Dawson Doonanco</h1>
-      <a href="https://github.com/dawsdoon">GitHub Repository</a>
+      <h2>Your Name</h2>
+      <Link href="https://github.com/dawsdoon" target="_blank" rel="noopener noreferrer">
+    </Link>
     </div>
     );
 };
 
 export default StudentInfo;
+
+//asdasdasd
