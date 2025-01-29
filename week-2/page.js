@@ -1,4 +1,4 @@
-import StudentInfo from '@/components/StudentInfo';
+import StudentInfo from './student-info';
 
 const Week2Page = () => {
   return (
