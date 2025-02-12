@@ -1,5 +1,5 @@
 import React from "react";
-import Item from ".Item";
+import Item from "./item";
 
 const items = [
   { name: "milk, 4 L 🥛", quantity: 1, category: "dairy" },
@@ -12,13 +12,13 @@ const items = [
   { name: "spaghetti, 454 g 🍝", quantity: 2, category: "dry goods" },
   { name: "toilet paper, 12 pack 🧻", quantity: 1, category: "household" },
   { name: "paper towels, 6 pack", quantity: 1, category: "household" },
-  { name: "dish soap 🥤", quantity: 1, category: "household" },
-  { name: "hand soap 🧜", quantity: 4, category: "household" },
+  { name: "dish soap 🍽️", quantity: 1, category: "household" },
+  { name: "hand soap 🧼", quantity: 4, category: "household" },
 ];
 
 const ItemList = () => {
   return (
-    <ul className="max-w-md mx-auto bg-white shadow-md rounded-lg divide-y divide-gray-300">
+    <ul className="divide-y divide-gray-200 bg-white shadow rounded-lg p-4">
       {items.map((item, index) => (
         <Item key={index} {...item} />
       ))}

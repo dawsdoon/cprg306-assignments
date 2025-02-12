@@ -1,12 +1,16 @@
 import React from "react";
-import ItemList from "./ItemList";
+import ItemList from "./item-list";
 
 const Page = () => {
   return (
-    <main className="min-h-screen bg-gray-100 flex flex-col items-center py-10">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Shopping Listt</h1>
-      <ItemList />
-    </main>
+    <div className="bg-blue-900 min-h-screen flex justify-center items-center">
+      <main className="max-w-2xl p-6 bg-blue-500 shadow-lg rounded-lg">
+        <h1 className="text-2xl font-bold text-center text-gray-900 mb-6">Shopping List</h1>
+        <div className="text-left">
+          <ItemList />
+        </div>
+      </main>
+    </div>
   );
 };
 
